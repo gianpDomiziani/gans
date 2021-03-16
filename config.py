@@ -1,8 +1,9 @@
+from pathlib import Path
 # Root directory for dataset
-dataroot = "data/celeba"
+dataroot = 'D:\data\celeba'
 
 # Number of workers for dataloader
-workers = 2
+workers = 0
 
 # Batch size during training
 batch_size = 128

@@ -20,7 +20,7 @@ def weights_init(m):
 
 class Generator(nn.Module):
 
-    def __init(self, ngpu):
+    def __init__(self, ngpu):
         super(Generator, self).__init__()
         self.ngpu = ngpu
         self.main = nn.Sequential(
@@ -28,13 +28,13 @@ class Generator(nn.Module):
             nn.BatchNorm2d(ngf*8),
             nn.LeakyReLU(True),
             nn.ConvTranspose2d(ngf*8, ngf*4, 4, 2, 1, bias=False),
-            nn.BatchNorm2d(ngf * 8),
+            nn.BatchNorm2d(ngf * 4),
             nn.LeakyReLU(True),
             nn.ConvTranspose2d(ngf*4, ngf*2, 4, 2, 1, bias=False),
-            nn.BatchNorm2d(ngf * 8),
+            nn.BatchNorm2d(ngf * 2),
             nn.LeakyReLU(True),
             nn.ConvTranspose2d(ngf*2, ngf, 4, 2, 1, bias=False),
-            nn.BatchNorm2d(ngf * 8),
+            nn.BatchNorm2d(ngf),
             nn.LeakyReLU(True),
             nn.ConvTranspose2d(ngf, nc, 4, 2, 1, bias=False),
             nn.Tanh()
@@ -67,8 +67,6 @@ class Discriminator(nn.Module):
             nn.LeakyReLU(0.2, True),
             # ndf*8 x 4 x 4
             nn.Conv2d(ndf * 8, 1, 4, 1, 0, bias=False),
-            nn.BatchNorm2d(ndf),
-            nn.LeakyReLU(0.2, True),
             nn.Sigmoid()
         )
 
