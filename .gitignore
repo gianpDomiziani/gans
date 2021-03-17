@@ -1,3 +1,5 @@
 .idea
-data
-config.py
+data/
+config*/
+
+__pycache__/
