@@ -1,4 +1,4 @@
-# Deep Convolution GAN PyTorch implementation
+# Deep Convolutional GAN PyTorch implementation
 
 WIP: 
 
