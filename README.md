@@ -1,10 +1,10 @@
-# Deep Convolution GAN PyTorch implementation
+# Deep Convolutional GAN PyTorch implementation
 
 WIP: 
 
-![training](plots\Figure_1.png)
+![training](plots/Figure_1.png)
 
-![training](plots\animation.gif)
+![training](plots/animation.gif)
 
 
 
