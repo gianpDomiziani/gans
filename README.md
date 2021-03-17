@@ -2,9 +2,9 @@
 
 WIP: 
 
-![training](plots\Figure_1.png)
+![training](plots/Figure_1.png)
 
-![training](plots\animation.gif)
+![training](plots/animation.gif)
 
 
 
